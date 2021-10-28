@@ -7,13 +7,13 @@ import friends from '../../data/friends.json';
 import FriendsList from '../FriendList';
 import transactions from '../../data/transactions.json'
 import TransactionHistory from '../TransactionHistory'
-// import { Delimiter } from '../delimiter/delimiter.jsx'
 
 function App() {
   return (
     <div className='App'>
       <Profile name={name} tag={tag} location={location} avatar={avatar} stats={stats} />
       <Statistics title={'Upload stats'} stats={statisticalData} />
+      <Statistics stats={statisticalData} />
       <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
