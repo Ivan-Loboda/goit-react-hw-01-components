@@ -1,0 +1,29 @@
+.profile {
+  max-width: 200px;
+  border: 1px gray solid;
+  border-radius: 5px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(241, 232, 232);
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 100%;
+  border: 1px black solid;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.description {
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.stats {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+}

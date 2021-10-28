@@ -1,16 +1,21 @@
 import './App.css';
-import ProfileList from './ProfileList';
-// import statisticalData from './statisticalData.json';
-// import friends from './friends.json';
-// import Statistics from './Statistic/Statistics';
-// import FriendsList from './Friends/FriendsList';
+import Profile from '../Profile';
+import { name, tag, location, avatar, stats } from "../../data/user.json";
+import statisticalData from '../../data/statistical-data.json';
+import Statistics from '../Statistics';
+import friends from '../../data/friends.json';
+import FriendsList from '../FriendList';
+import transactions from '../../data/transactions.json'
+import TransactionHistory from '../TransactionHistory'
+// import { Delimiter } from '../delimiter/delimiter.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <ProfileList />
-      {/* <Statistics title={'Upload stats'} stats={statisticalData} /> */}
-      {/* <FriendsList friends={friends} /> */}
+    <div className='App'>
+      <Profile name={name} tag={tag} location={location} avatar={avatar} stats={stats} />
+      <Statistics title={'Upload stats'} stats={statisticalData} />
+      <FriendsList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
